@@ -10,6 +10,7 @@ public class CaveDoorLever : MonoBehaviour
     {
         if (isAlreadyOpen) return;
         isAlreadyOpen = true;
+        SoundManager.Instance.PlaySound("Door");
         animator.Play("OpenDoor");
     }
 }

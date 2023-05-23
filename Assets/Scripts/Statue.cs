@@ -14,7 +14,7 @@ public class Statue : MonoBehaviour
     public MeshRenderer leverRenderer;
     private bool Pulled = false;
 
-    public void SusbcribeID(int ID, Action<int> callback)
+    public void SubscribeID(int ID, Action<int> callback)
     {
         Pulled = false;
         id = ID;
@@ -23,6 +23,11 @@ public class Statue : MonoBehaviour
     
     public void Activate()
     {
+        if (Pulled)
+        {
+            return;
+        }
+        SoundManager.Instance.PlaySound("Door");
         Pulled = true;
         leverRenderer.sharedMaterial = OnPulled;
         OnPulledInt?.Invoke(id);

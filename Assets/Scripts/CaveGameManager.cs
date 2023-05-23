@@ -21,7 +21,7 @@ public class CaveGameManager : MonoBehaviour
         pressedLevers = new List<int>();
         for (int i = 0; i < Statues.Count; i++)
         {
-            Statues[i].SusbcribeID(i, LeverPulled);
+            Statues[i].SubscribeID(i, LeverPulled);
         }
 
         levelComplete = false;
