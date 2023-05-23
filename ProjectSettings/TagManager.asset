@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - PiezaMapa
+  - shovel
   layers:
   - Default
   - TransparentFX
