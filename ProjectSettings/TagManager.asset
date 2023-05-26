@@ -4,14 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - PiezaMapa
-  - shovel
   - ball
-  - PiezaMapaCalaca
-  - PiezaMapaBarco
-  - PiezaMapaCofre
-  - PiezaMapaBarcoD
-  - Fire
+  - shovel
+  - Agua
   layers:
   - Default
   - TransparentFX
@@ -19,8 +14,8 @@ TagManager:
   - 
   - Water
   - UI
-  - Teleportable
-  - UnderwaterVFX
+  - 
+  - 
   - 
   - 
   - 
