@@ -5,25 +5,36 @@ using UnityEngine;
 
 public class CannonBallSpawner : MonoBehaviour
 {
-    public GameObject spawner;
-    public GameObject ball;
+    public Transform spawnerpos;
+    public GameObject containerBalls;
 
     public bool empty;
+
+    private void Start()
+    {
+        empty = false;
+    }
+
+    private void Update()
+    {
+        if (empty)
+        {
+            SpawnContainer();
+        }
+    }
+
+    private void SpawnContainer()
+    {
+        Instantiate(containerBalls, spawnerpos);
+
+        empty = false;
+    }
 
     private void OnCollisionStay(Collision collision)
     {
         if (!collision.gameObject.CompareTag("ball"))
         {
             empty = true;
-            SpawnBall();
-        }
-    }
-
-    private void SpawnBall()
-    {
-        if (empty)
-        {
-            Instantiate(ball, spawner.transform);
         }
     }
 }
