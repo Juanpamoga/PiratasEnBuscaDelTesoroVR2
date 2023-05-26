@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4409624, g: 0.41319785, b: 0.45784557, a: 1}
+  m_IndirectSpecularColor: {r: 0.44054866, g: 0.4129893, b: 0.45778665, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10401,7 +10401,7 @@ MonoBehaviour:
   - {fileID: 1224285296}
   cannonBall: {fileID: 2515335259194126844, guid: 504c7414a83706c48bd3e047d387b309,
     type: 3}
-  force: 6200
+  force: 8000
   ShootSound: {fileID: 601671088}
 --- !u!82 &601671088
 AudioSource:
@@ -32032,7 +32032,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1796711403}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 48cbe1d5074e4d94195e524cdf3f83e0, type: 3}
   m_Name: 
