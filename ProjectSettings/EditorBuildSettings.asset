@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cave.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Pirate ship cm 1.unity
+    guid: e8f495995bedbef4ab3d78556badcbc9
+  - enabled: 1
+    path: Assets/Scenes/Cabina del capitan.unity
+    guid: e2893e358ab18d146bfa4b7ac99dd113
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: dea48d8443c2ac341bdadb0f02701d82,
       type: 2}

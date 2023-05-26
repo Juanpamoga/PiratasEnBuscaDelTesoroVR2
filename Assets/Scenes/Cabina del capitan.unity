@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.25054938, g: 0.14789174, b: 0.11846922, a: 1}
+  m_IndirectSpecularColor: {r: 0.25080502, g: 0.14790073, b: 0.118521936, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1712,6 +1712,8 @@ GameObject:
   - component: {fileID: 451370727}
   - component: {fileID: 451370729}
   - component: {fileID: 451370728}
+  - component: {fileID: 451370731}
+  - component: {fileID: 451370730}
   m_Layer: 0
   m_Name: SM_FX_Glow_Ring_01 (1)
   m_TagString: Untagged
@@ -1784,6 +1786,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 451370726}
   m_Mesh: {fileID: 4300000, guid: d29428f9d0c477141a67eda96e5710ea, type: 3}
+--- !u!114 &451370730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451370726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1875c98ab178d0468fde9526a2fd50a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numScene: 1
+--- !u!65 &451370731
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451370726}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.499999, y: 4.306638, z: 2.499999}
+  m_Center: {x: 0.0000073758615, y: 2.153319, z: 0.000004047729}
 --- !u!4 &452622972 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8407923665281762073, guid: 4b31a8fec775487449f2e9e977953e54,
