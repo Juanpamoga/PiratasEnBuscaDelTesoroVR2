@@ -7,6 +7,8 @@ public class BallCharger : MonoBehaviour
 {
     private bool isReloaded;
 
+     public AudioSource ShootSound;
+
     public GameObject shoteableCannonBall;
     public Transform barrel;
 
@@ -40,5 +42,7 @@ public class BallCharger : MonoBehaviour
         bullet.GetComponent<Rigidbody>().velocity = barrel.forward * force * Time.deltaTime; ;
 
         isReloaded = false;
+
+        ShootSound.Play();
     }
 }

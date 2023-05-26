@@ -7,6 +7,11 @@ TagManager:
   - PiezaMapa
   - shovel
   - ball
+  - PiezaMapaCalaca
+  - PiezaMapaBarco
+  - PiezaMapaCofre
+  - PiezaMapaBarcoD
+  - Fire
   layers:
   - Default
   - TransparentFX
