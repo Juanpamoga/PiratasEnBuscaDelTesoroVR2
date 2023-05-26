@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PiezaMapa
   - shovel
+  - ball
   layers:
   - Default
   - TransparentFX
