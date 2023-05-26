@@ -3,48 +3,29 @@ using UnityEngine;
 
 public class HundimientoBarco : MonoBehaviour
 {
-
-    public int shipHp = 2;
-
-    
-
-   
-
-
     public float fuerzaFlotacion = 2000f;  // Aumenta la fuerza de flotación para un hundimiento más lento
     public float fuerzaInclinacion = 500f; // Aumenta la fuerza de inclinación para una mayor rotación lateral
 
     private Rigidbody barcoRigidbody;
     private float tiempoInicioHundimiento;
     private bool hundiendose = false;
-    public bool isDie;
+    //public bool isDie;
 
-    private void Start()
+    private void Awake()
     {
         barcoRigidbody = GetComponent<Rigidbody>();
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("ball"))
-        {
-            shipHp--;
-
-            if (shipHp <= 0)
-            {
-                Die();
-            }
-        }
-    }
+    
 
     private void Die()
     {
-        isDie = true;
+        //isDie = true;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Agua") && !hundiendose &&isDie)
+        if (other.CompareTag("Agua") && !hundiendose)
         {
             //Debug.Log("sz");
             tiempoInicioHundimiento = Time.time;
@@ -57,7 +38,7 @@ public class HundimientoBarco : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (hundiendose && isDie)
+        if (hundiendose)
         {
             // Calcular la duración del hundimiento
             float tiempoTranscurrido = Time.time - tiempoInicioHundimiento;
